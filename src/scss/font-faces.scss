@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap');
+
+@mixin header {
+   font-family: 'Montserrat',
+   sans-serif;
+   text-transform: uppercase;
+   font-size: 45px;
+   line-height: 70px;
+   font-weight: 800;
+   letter-spacing: 1px;
+
+   @media (min-width: 768px) {
+      font-size: 58px;
+      line-height: 90px;
+      letter-spacing: 2.5px;
+   }
+}
+
+@mixin text {
+   font-family: 'Montserrat',
+   sans-serif;
+   text-transform: none;
+   font-size: 13px;
+   line-height: 22px;
+   font-weight: 400;
+   letter-spacing: 0;
+
+   @media (min-width: 768px) {
+      font-size: 17px;
+      line-height: 29px;
+   }
+}
+
+@mixin small-info {
+   font-family: 'Montserrat',
+   sans-serif;
+   text-transform: none;
+   font-size: 10px;
+   line-height: 18px;
+   font-weight: 300;
+   letter-spacing: .3px;
+
+   @media (min-width: 768px) {
+      font-size: 13px;
+      line-height: 22px;
+      letter-spacing: .6px;
+   }
+}
